@@ -1,3 +1,3 @@
 # plugin-template
 
-Plugin project template.
+Provide basic plugin services for kokkoro.

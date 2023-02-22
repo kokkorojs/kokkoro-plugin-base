@@ -1,17 +1,17 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@kokkoro/core': ^2.0.0
+  '@kokkoro/core': ^2.0.1
   '@kokkoro/utils': ^0.7.1
 
 devDependencies:
-  '@kokkoro/core': 2.0.0
+  '@kokkoro/core': 2.0.1
   '@kokkoro/utils': 0.7.1
 
 packages:
 
-  /@kokkoro/core/2.0.0:
-    resolution: {integrity: sha512-TRua2dVgHS6tkuvPu7N5jdNK37g7GlyO+3dU7wlw+3eHgPnBAOTLAtGoXxypWjMPUTBtFu8aAkmJ+Y03WXHKRQ==}
+  /@kokkoro/core/2.0.1:
+    resolution: {integrity: sha512-/yC0pP7hxDuH3ceupwrZm66FU0iEMixwTXXoHnYwbBa8MvdOSju0jnOLVAcCYbxnHAVRjsmrfpmopKTorIrfvw==}
     engines: {node: '>= v15'}
     dependencies:
       '@kokkoro/utils': 0.7.1
