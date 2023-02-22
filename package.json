@@ -1,0 +1,32 @@
+{
+  "name": "plugin-template",
+  "version": "0.0.0",
+  "description": "Plugin project template.",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">= v15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kokkorojs/plugin-template.git"
+  },
+  "keywords": [
+    "kokkoro"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kokkorojs/plugin-template/issues"
+  },
+  "homepage": "https://github.com/kokkorojs/plugin-template#readme",
+  "devDependencies": {
+    "@kokkoro/core": "^2.0.0",
+    "@kokkoro/utils": "^0.7.1"
+  },
+  "files": [
+    "lib"
+  ]
+}
