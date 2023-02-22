@@ -1,6 +1,6 @@
 {
   "name": "kokkoro-plugin-base",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provide basic plugin services for kokkoro.",
   "main": "lib/index.js",
   "engines": {

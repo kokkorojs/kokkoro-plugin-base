@@ -36,7 +36,7 @@ export class Service {
    */
   getCorePackage() {
     const filename = require.resolve('@kokkoro/core');
-    const path = join(filename, '../package.json');
+    const path = join(filename, '../../package.json');
     const pkg = require(path);
 
     return deepClone(pkg);
