@@ -12,7 +12,7 @@ plugin
 plugin
   .command('print <message>')
   .description('打印测试')
-  .sugar(/^(打印|输出)\s?(?<message>.+)$/)
+  .sugar(/^(打印|输出)\s*(?<message>.+)$/)
   .action(async (ctx) => {
     await ctx.reply(ctx.query.message);
   })
@@ -51,7 +51,7 @@ plugin
   .command('mount <...names>')
   .description('挂载插件')
   .limit(5)
-  .sugar(/^(挂载)\s?(?<names>([a-z]|\s)+)$/)
+  .sugar(/^(挂载)\s*(?<names>([a-z]|\s)+)$/)
   .action(async (ctx) => {
     const { names } = ctx.query;
     const message = await service.batchMountPlugin(names);
@@ -65,7 +65,7 @@ plugin
   .command('unmount <...names>')
   .description('卸载插件')
   .limit(5)
-  .sugar(/^(卸载)\s?(?<names>([a-z]|\s)+)$/)
+  .sugar(/^(卸载)\s*(?<names>([a-z]|\s)+)$/)
   .action(async (ctx) => {
     const { names } = ctx.query;
     const message = await service.batchUnmountPlugin(names);
@@ -79,7 +79,7 @@ plugin
   .command('reload <...names>')
   .description('重载插件')
   .limit(5)
-  .sugar(/^(重载)\s?(?<names>([a-z]|\s)+)$/)
+  .sugar(/^(重载)\s*(?<names>([a-z]|\s)+)$/)
   .action(async (ctx) => {
     const { names } = ctx.query;
     const message = await service.batchReloadPlugin(names);
@@ -93,7 +93,7 @@ plugin
   .command('enable <...names>')
   .description('启用插件')
   .limit(4)
-  .sugar(/^(启用)\s?(?<names>([a-z]|\s)+)$/)
+  .sugar(/^(启用)\s*(?<names>([a-z]|\s)+)$/)
   .action(async (ctx, bot) => {
     const { names } = ctx.query;
     const message = await service.batchEnablePlugin(bot, names);
@@ -107,7 +107,7 @@ plugin
   .command('disable <...names>')
   .description('禁用插件')
   .limit(4)
-  .sugar(/^(禁用)\s?(?<names>([a-z]|\s)+)$/)
+  .sugar(/^(禁用)\s*(?<names>([a-z]|\s)+)$/)
   .action(async (ctx, bot) => {
     const { names } = ctx.query;
     const message = await service.batchDisablePlugin(bot, names);
@@ -147,7 +147,7 @@ plugin
   .command('apply <...names>')
   .description('应用群服务')
   .limit(3)
-  .sugar(/^(应用)\s?(?<names>([a-z]|\s)+)$/)
+  .sugar(/^(应用)\s*(?<names>([a-z]|\s)+)$/)
   .action(async (ctx, bot) => {
     const { group_id, query } = ctx;
 
@@ -167,7 +167,7 @@ plugin
   .command('exempt <...names>')
   .description('免除群服务')
   .limit(3)
-  .sugar(/^(免除)\s?(?<names>([a-z]|\s)+)$/)
+  .sugar(/^(免除)\s*(?<names>([a-z]|\s)+)$/)
   .action(async (ctx, bot) => {
     const { group_id, query } = ctx;
 
